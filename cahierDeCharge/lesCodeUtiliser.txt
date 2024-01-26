@@ -1,0 +1,59 @@
+ 
+**
+// ajouter une image sur la premier page de demarage avant l'interface
+
+
+// Créer une instance de QSplashScreen avec votre image
+    QSplashScreen *splash = new QSplashScreen;
+    splash->setPixmap(QPixmap("/home/modev/jclmonde/devmaste/projects/infomatservice/image/buckled-book-g8e31f17ad_640.jpg"));
+
+
+    // Afficher l'écran de démarrage
+        splash->show();
+    MainWindow mainWindow;
+
+    // Faire un traitement ou initialisation ici (simulé avec un QTimer dans cet exemple)
+    QTimer::singleShot(3000, splash, SLOT(close()));
+    // Créer la fenêtre principale de l'application
+    QTimer::singleShot(3000, &mainWindow, SLOT(show()));
+
+    //mainWindow.show();
+    return a.exec();
+
+ou encore 
+:
+#include <QApplication>
+#include <QSplashScreen>
+#include <QTimer>
+#include "mainwindow.h" // Remplacez par le nom de votre classe MainWindow
+
+int main(int argc, char *argv[])
+{
+    QApplication app(argc, argv);
+
+    // Créer une instance de QSplashScreen avec votre image
+    QSplashScreen splash(QPixmap(":/images/splash_image.png")); // Remplacez ":/images/splash_image.png" par le chemin de votre image
+
+    // Afficher l'écran de démarrage
+    splash.show();
+
+    // Faire un traitement ou initialisation ici (simulé avec un QTimer dans cet exemple)
+    QTimer::singleShot(3000, &app, [&]() {
+        // Fermer l'écran de démarrage
+        splash.close();
+
+        // Créer la fenêtre principale de l'application
+        MainWindow mainWindow;
+        mainWindow.show();
+    });
+
+    return app.exec();
+}
+
+sur le site officiel:
+
+
+https://doc.qt.io/qt-6/qsplashscreen.html#details
+
+
+**

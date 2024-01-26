@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/page_1">
+        <file>learn-english.png</file>
+    </qresource>
+</RCC>

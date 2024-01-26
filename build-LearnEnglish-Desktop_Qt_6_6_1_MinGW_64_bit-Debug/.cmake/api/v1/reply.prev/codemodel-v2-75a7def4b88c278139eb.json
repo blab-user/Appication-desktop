@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-cf13611aebcadaa2be58.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "LearnEnglish",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "LearnEnglish::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LearnEnglish-Debug-fe7615f6a85ef7efbdb6.json",
+					"name" : "LearnEnglish",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LearnEnglish_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LearnEnglish_autogen-Debug-5f59099b7d268b6df03c.json",
+					"name" : "LearnEnglish_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LearnEnglish_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LearnEnglish_autogen_timestamp_deps-Debug-334c7b6f6a358027d44a.json",
+					"name" : "LearnEnglish_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Rosaire-Vezolo/Desktop/projet-c++/Game_learn/Game_learn/build-LearnEnglish-Desktop_Qt_6_6_1_MinGW_64_bit-Debug",
+		"source" : "C:/Users/Rosaire-Vezolo/Desktop/projet-c++/Game_learn/Game_learn/LearnEnglish"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

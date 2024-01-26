@@ -1,0 +1,39 @@
+{
+    "quiz":[
+        {
+            "id": 1,
+            "question": "Complétez avec SOME ou ANY :
+            Give me _____ t-shirts. I don’t care about the color.",
+            "level": 2,
+            "answers":[
+                {
+                    "rep":"same",
+                    "correct": false
+                },
+                {
+                    "rep": "any",
+                    "correct": true
+                }
+            ]
+        },
+
+        {
+            "id": 2,
+            "question": "Complétez avec SOME ou ANY :
+            You baked a cake. I would like _____ please.",
+            "level": 2,
+            "answers":[
+                {
+                    "rep": "some",
+                    "correct": true
+                },
+                {
+                    "rep": "any",
+                    "correct": false
+                }
+            ]
+        }
+
+    ]
+
+}

@@ -1,0 +1,389 @@
+\documentclass[12pt, a4paper]{report}
+
+%--------------package--------------
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{xcolor} %integration couleur de text
+\usepackage{fancyhdr} %integration couleur de text et graphique
+\usepackage{graphicx}
+\usepackage{colortbl} %integration couleur tableau
+%------------commande pour integer les tableau-------------
+\usepackage{array,multirow,makecell}
+\setcellgapes{1pt}
+\makegapedcells
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash }b{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash }b{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash }b{#1}}
+
+%--------------body----------------------
+
+%--------------page de garde--------------
+
+\begin{document}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{fst_logo2.png}
+\vfill
+
+%---------------- université---------------
+\large{\textbf{
+Faculté des Sciences et Technique de Tanger\\
+Département Informatique\\
+Filière Génie Informatique\\
+Cycle Licence\\}}
+\vfill
+\vfill
+\begin{flushright}
+Numéro d'ordre Étudiant: \textcolor{blue}{xxxxxx}
+\end{flushright}
+\fbox{
+\begin{minipage}{0.9\textwidth}
+\centering\large\textbf{\emph{\textcolor{magenta}{Application d'un jeu Apprentissage d'Anglais}}}
+\end{minipage}
+}
+\vfill
+\large{Projet tutoré et présenté par:}\\
+\textbf{\textcolor{blue}{xxxxxx}}
+
+\vfill
+\underline{Sous la direction de:}\\
+\textbf{\textcolor{blue}{Madame xxx xxxx xxxx}}
+\vfill
+
+Soutenu le: ...//...//....
+\end{center}
+\vfill
+Présenté Devant la Responsable:
+\bigskip
+
+\begin{tabular}{ll}
+Professeur:\textbf{\textcolor{blue}{xxxxxxxxxx}}\\
+\end{tabular}
+\bigskip
+
+\centering\emph{Année Universitaire: 2023-2024}
+\vfill
+
+%------------nouvelle page poour la page le tableau de matiere-----------------------
+\newpage
+
+\tableofcontents
+\chapter{}
+\textcolor{magenta}{\section{Préparation projet}}
+
+Le projet est la mise en place d’une application permettant d’apprendre les cours d’anglais. Ceci permet de mettre en évidence une série des question QCM sur la grammaire action de coordination tout sur texte a trou.
+%-------------------------tableau 1---------------------------------
+\textcolor{magenta}{\section{Organisation du Projet}}
+
+\begin{tabular}{|R{6cm}||C{6cm}|}
+\hline % ligne tableau
+\centering
+Membre du projet&responsabilité\\
+\hline 
+\centering
+ \textbf{ xxxxxxxxxxxxx} & \textbf{Ensemble du projet}\\
+\hline
+\end{tabular}
+
+%-------------------------tableau 2---------------------------------
+\textcolor{magenta}{\subsection{Encadrant du projet}}
+\begin{tabular}{|R{6cm}||C{6cm}|}
+\hline % ligne tableau
+\centering %ccentrer les ecrits
+Professeur & responsabilité\\
+\hline
+\centering
+ \textbf{xxxxxxx} & \textbf{Évaluation et Notation projet}\\
+\hline
+\end{tabular}
+%----------------------Fin des deux tableau--------------------------
+
+\textcolor{magenta}{\subsection{Planning du Diagramme de Gant: }}
+\begin{center}
+\includegraphics[width=0.50\textwidth]{Diag Gantt.png} 
+\end{center}
+\vfill
+%----------------------Langage use-------------------------------------
+\textcolor{magenta}{\section{Langage Utilisé}}
+Dans ce projet j’ai utilisé des logiciels suivant :\\
+\textbf{\textcolor{blue}{PowerAMC: }} pour la mise en place de la modélisation UML
+\bigskip
+\begin{center}
+\includegraphics[width=0.4 \textwidth]{imgPowerAMC.jpg} 
+\end{center}
+%---------------------------image langage 2-------------------------------
+\textbf{\textcolor{blue}{Latex \& Word:} }est un langage de balise pour la mise en place et la saisie du rapport.
+\bigskip
+\begin{center}
+\includegraphics[width=0.3 \textwidth]{texmaker.png}
+\end{center}
+
+%---------------------------image langage 3-------------------------------
+
+\textbf{\textcolor{blue}{QtC++ :}} est un Framework ide c++ qui permet de développer les application desktop.
+\bigskip
+\begin{center}
+\includegraphics[width=0.4 \textwidth]{qt.png} 
+\end{center}
+
+%---------------------------image langage 4-------------------------------
+\textbf{\textcolor{blue}{Qt Design Studio :} } est une interface de Design utiliser par Qt (python, c++ etc..) pour développer l’interface utilisateur.
+\bigskip
+\begin{center}
+\includegraphics[width=0.4 \textwidth]{ds.png} 
+\end{center}
+\textbf{\textcolor{blue}{Json Package : }} pour la mise en place d’une data base local
+\bigskip
+\begin{center}
+\includegraphics[width=0.4 \textwidth]{json.png} 
+\end{center}
+
+%----------------------------insertion nouvelle section-----------------------
+\textcolor{magenta}{\section{ Modélisation UML}}
+\textcolor{magenta}{\subsection{Diagramme de classe: }}
+%----------------------------Diag de classe-----------------------------------
+Le diagramme de classes est utilisé pour représenter la structure d'un système en spécifiant les différentes classes d'objets ainsi que les relations entre ces classes.\\
+Dans notre système d’application, le diagramme de classes est utilisé pour représenter les différentes entités du système, telles que les Quiz, les Answers, etc., ainsi que les relations entre ces entités.
+\bigskip
+\begin{center}
+\includegraphics[width=1 \textwidth]{diagClasse.png} 
+\end{center}
+%----------------------------Diag de classe-----------------------------------
+\textcolor{magenta}{\subsection{Diagramme de use case: }}
+Ce diagramme nous permet de spécifier le rôle de l'utilisateur avec le système ou l’application
+\bigskip
+\begin{center}
+\includegraphics[width=0.8 \textwidth]{DiagUseCas.png} 
+\end{center}
+%----------------------------Diag de classe-----------------------------------
+\textcolor{magenta}{\subsection{Diagramme d'activité: }}
+Les diagrammes d'activités sont utilisés pour représenter les processus métiers d'un système, en spécifiant les différentes étapes ainsi que les conditions de transition entre ces étapes.
+Dans notre système d’application, les diagrammes d'activités sont utilisés pour modéliser les processus de connexion, de saisie de chemin et de jouer le jeu.
+\bigskip
+\begin{center}
+\includegraphics[width=1 \textwidth]{DiagActivité.png} 
+\end{center}
+%----------------------------Diag de classe-----------------------------------
+\textcolor{magenta}{\subsection{Diagramme séquence: }}
+\bigskip
+\begin{center}
+\includegraphics[width=1 \textwidth]{DiagSéqance.png} 
+\end{center}
+\newpage
+%----------------------------Fin Presentation Diag-----------------------------------
+%-------------------------------creation niveau--------------------------------------
+%----------------------------insertion nouvelle section------------------------------
+
+\textcolor{magenta}{\section{Création des Niveaux et prise de mains}}
+
+\textcolor{magenta}{\subsection{Fonction et syntaxe niveau et Classe intégré}}
+%----------------------------insertion nouvelle section------------------------------
+Avant de faire la saisie du code, il fallait faire quelque modification au niveau du code source donnée par défaut lors de la création du nouveau projet sur \textbf{\textcolor{blue}{Qt}}.
+La 1er choses la mise en place de l’interface du jeu à travers le fichier \textbf{\textcolor{blue}{Ui}} suivant :
+\bigskip
+\begin{center}
+\includegraphics[width=0.7 \textwidth]{bout_code.png}
+\end{center}
+\bigskip
+La résolution qui sera utiliser pour la l’écran sera \textbf{\textcolor{blue}{539X336 px.}}
+La configuration de cette interface nous a permis aussi de faire la mise en place des classes lier à chaque évènement. Chaque classe \textbf{\textcolor{blue}{.cpp}} où \textbf{\textcolor{blue}{.h}} joue un rôle spécifique.\\
+Les classes \textbf{\textcolor{blue}{.h}} nous permet de déclarer des attributs, des méthodes, et les appels include par contre, les classes \textbf{\textcolor{blue}{.cpp}} permet d’appeler les méthodes et les attributs disponible dans les fichiers \textbf{\textcolor{blue}{.h}} pour la création a la manipulation des objets. \\
+\textbf{\subsubsection{\textcolor{magenta}{Les classes .h sont les suivantes :}}}
+\bigskip
+
+%---------------------------------------Integrer les classer user.h--------------------------------
+\textbf{\textcolor{blue}{User.h: }} Contient le nom utilisateur, l’historique, l’affiche score permettant de récupéré les données saisies sur l’interface avec le méthode \textcolor{blue}{QString et QSittings} (des méthode propre de Qt).
+\bigskip
+\begin{center}
+\includegraphics[width=0.42 \textwidth]{userH.png}
+\includegraphics[width=0.45 \textwidth]{userH_2.png}
+\end{center}
+%---------------------------------------Integrer les classer Level.h--------------------------------
+
+\textbf{\textcolor{blue}{Level.h: }} Contient la liste de niveau et le niveau étape par étape.
+\bigskip
+\begin{center}
+\includegraphics[width=0.9 \textwidth]{levelH.png}
+\end{center}
+\newpage
+%---------------------------------------Integrer les LearnEnglish.h--------------------------------
+
+\textbf{\textcolor{blue}{LearnEnglish.h: }} Contient les attributs et méthode d’appel depuis l’interface \textcolor{blue}{ui} pour l’appel des boutons lors des cliques ils sont déclarés dans \textcolor{blue}{private slots}, la fonction d’appel sur menu bar, il contient aussi le destructeur.
+\bigskip
+\begin{center}
+\includegraphics[width=0.90 \textwidth]{levelH.png}
+\end{center}
+%---------------------------------------Integrer les Game.h--------------------------------
+\textbf{\textcolor{blue}{Game.h: }} Contient les méthodes et les fonctions pour la mise en place du jeu.
+\bigskip
+\begin{center}
+\includegraphics[width=0.90 \textwidth]{GameH.png}
+\end{center}
+%---------------------------------------Integrer les Answer.h--------------------------------
+\textbf{\textcolor{blue}{Answer.h: }} Contient les méthodes et les fonctions pour la mise en place du jeu.
+\bigskip
+\begin{center}
+\includegraphics[width=0.90 \textwidth]{AnswerH.png}
+\end{center}
+%---------------------------------------Integrer les Answer.h--------------------------------
+\textbf{\textcolor{blue}{Quiz.h: }} Contient des attributs et méthode qui Nous permet de récupérer la liste des questions depuis le fichier  \textcolor{blue}{json} du niveau concerné
+\bigskip
+\begin{center}
+\includegraphics[width=0.90 \textwidth]{QuizH.png}
+\end{center}
+%---------------------------------------section pour les .cpp-------------------------------------
+\newpage
+\textbf{\subsubsection{\textcolor{magenta}{Les classes .cpp sont les suivantes :}}}
+\bigskip
+
+%---------------------------------------Integrer les Answer.cpp--------------------------------
+
+\textbf{\textcolor{blue}{Answer.cpp: }} Nous permettons de récupérer les attributs et méthode déclarer dans le fichier \textcolor{blue}{answer.h}
+\bigskip
+\begin{center}
+\includegraphics[width=0.90 \textwidth]{AnswerCpp.png}
+\end{center}
+
+%---------------------------------------Integrer les Game.cpp--------------------------------
+
+\textbf{\textcolor{blue}{Game.cpp: }} Il nous permet de récupérer, les fichiers \textcolor{blue}{.h} de \textcolor{blue}{quiz} et \textcolor{blue}{game} permettons la mise en place des niveau \textcolor{blue}{Play Game} il permet aussi de la récupération des données depuis le fichier \textcolor{blue}{json} de chaque niveau.
+\bigskip
+\begin{center}
+\includegraphics[width=0.90 \textwidth]{AnswerCpp.png}
+\end{center}
+
+%---------------------------------Integrer les LearnEnglish.cpp -------------------------------
+
+\textbf{\textcolor{blue}{LearnEnglish.cpp: }} Il s’occupe de la grande partie du projet en récupèrerons l’interface ui, les manipulations des objets, le nom d’user, les attributs et méthode déclarer dans LearnEnglish.h, le système d’entré sortie, sur le clavier.
+\bigskip
+\begin{center}
+\includegraphics[width=0.95 \textwidth]{LearnEnglish_1.png}
+\end{center}
+%-------
+\bigskip
+\begin{center}
+\includegraphics[width=0.95 \textwidth]{LearnEnglish_2.png}
+\end{center}
+%--------
+\bigskip
+\begin{center}
+\includegraphics[width=0.95 \textwidth]{LearnEnglish_3.png}
+\end{center}
+%-------
+\bigskip
+\begin{center}
+\includegraphics[width=0.95 \textwidth]{LearnEnglish_4.png}
+\end{center}
+%------
+\bigskip
+\begin{center}
+\includegraphics[width=0.95 \textwidth]{LearnEnglish_5.png}
+\end{center}
+%-----
+\bigskip
+\begin{center}
+\includegraphics[width=0.95 \textwidth]{LearnEnglish_6.png}
+\end{center}
+%-------
+\bigskip
+\begin{center}
+\includegraphics[width=0.95 \textwidth]{LearnEnglish_7.png}
+\end{center}
+%-----------------------------------Main.cpp-------------------------------------
+\textbf{\textcolor{blue}{Main.cpp: }} Permet de faire appeler de l’écran de démarrage, et la compilation sur l’ensemble des classes, de l’ouverture et fermeture de l’interface utilisateur.
+\bigskip
+\begin{center}
+\includegraphics[width=0.95 \textwidth]{MainCpp.png}
+\end{center}
+
+%-----------------------------------Quiz.cpp-------------------------------------
+\textbf{\textcolor{blue}{Quiz.cpp: }} Récupère et initialise les attributs et classe déclarer dans \textcolor{blue}{quiz.h}
+\bigskip
+\begin{center}
+\includegraphics[width=0.70 \textwidth]{quizCpp.png}
+\end{center}
+
+%-----------------------------------repositoire.cpp-------------------------------------
+\textbf{\textcolor{blue}{Repository.cpp:}} Il nous permet de récupérer les fichier \textcolor{blue}{json} avec les fonctions propres a \textcolor{blue}{Qt} comme : \textcolor{blue}{QJsonObject, QJsonDocument ect… } son rôle ultime la manipulation des données \textcolor{blue}{json}.
+\bigskip
+\begin{center}
+\includegraphics[width=0.70 \textwidth]{RepositoryCpp_1.png}
+\end{center}
+%------
+\bigskip
+\begin{center}
+\includegraphics[width=0.70 \textwidth]{RepositoryCpp_2.png}
+\end{center}
+%------
+\bigskip
+\begin{center}
+\includegraphics[width=0.70 \textwidth]{RepositoryCpp_3.png}
+\end{center}
+%------
+\bigskip
+\begin{center}
+\includegraphics[width=0.70 \textwidth]{RepositoryCpp_4.png}
+\end{center}
+%-----------------------------------Fichier .json-------------------------------------
+\textbf{\textcolor{blue}{Fichier Json: }}\\
+Les fichiers nous permettent d’avoir une base de donnée local pour la mise en place des question et réponse niveau 1, 2, 3.\\
+Je tiens à préciser pour l’interface \textcolor{blue}{Qt} pour la récupération des données comme \textcolor{blue}{le Pseudo et le niveau} actuel, on utilise \textcolor{blue}{Qstring et Qsettings:}\\
+
+\textcolor{red}{$QSettings settings("LeranEnglish","InterfaceSouscription");$\\
+$QString user = settings.value("pseudo").toString();$\\ 
+$QString level settings.value("usually_level")toString();$}
+
+%-----------------------------------------interface jeu-------------------------------
+\textcolor{magenta}{\section{Interface jeu et Niveau}}
+
+\bigskip
+\begin{center}
+\includegraphics[width=0.70 \textwidth]{interface_1.png}
+\end{center}
+%------
+\bigskip
+\begin{center}
+\includegraphics[width=0.70 \textwidth]{interface_2.png}
+\end{center}
+%------
+\bigskip
+\begin{center}
+\includegraphics[width=0.70 \textwidth]{interface_3.png}
+\end{center}
+%------
+\bigskip
+\begin{center}
+\includegraphics[width=0.70 \textwidth]{interface_4.png}
+\end{center}
+%------
+\bigskip
+\begin{center}
+\includegraphics[width=0.70 \textwidth]{interface_5.png}
+\end{center}
+%------
+\bigskip
+\begin{center}
+\includegraphics[width=0.70 \textwidth]{interface_6.png}
+\end{center}
+%------
+\bigskip
+\begin{center}
+\includegraphics[width=0.70 \textwidth]{interface_7.png}
+\end{center}
+
+%--------------------------------------Fin section----------------------------------
+
+\textcolor{magenta}{\section{Difficulté Rencontrer}}
+Pour le développement du jeu dans qt la prise de mains et la création des interfaces qt sont complexe et demande un travail acharner, de la concentration et la volonté à la rechercher pour le développement des application \textcolor{blue}{Qtc++}.
+
+\textbf{\textcolor{magenta}{\section{Profit Tirer}}}
+Le profit tirer pour ce projet est très énorme contenu des langages, les logiciel et technologie utiliser comme. Langage était utiliser pour un but précis comme \textcolor{blue}{PowerAMC} pour renforcer mes capacités pour analyse et la modélisation \textcolor{blue}{UML, Qt desing} pour l'infographie et le design des application web, \textcolor{blue}{Qtc++} pour le développement des jeux et application desktop et qui est aussi actuellement beaucoup demander pour la mise en place des systèmes embarqué comme les cartes arduino vue la rapide et le contact direct du langage c++ ou appareil électronique,\textcolor{blue}{TekMaker} est un langage des balises pour la rédaction et Édition des articles par exemple.
+
+%---------------------------------conclusion-------------------------------------------
+\textbf{\textcolor{magenta}{\section{Conclusion}}}
+
+Ce projet m'a permit de développer mes compétence en analyse UML, développement d'application C++ et comprendre le principe d'exécution POO avec c++.\\
+avec qtC++, j'ai développé mes connaissance et compétence avec ce framework ide. il dispose d'un système d'exécution unique avec une interface facile pour la prise en mains.\\
+le code source reste disponible sur \textbf{github}: \textbf{\textcolor{blue}{blab-user}} pour les étudiants souhaitant développer un projet similaire avec QtC++, QtPython et le langage de balise Latex.
+
+
+\end{document}

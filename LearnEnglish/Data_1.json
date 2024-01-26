@@ -1,0 +1,70 @@
+{
+    "quiz":[
+        {
+            "id": 1,
+            "question": "Complétez avec le modal qui convient :
+            I can’t remember the whole movie.
+            I _____ have slept for a while",
+            "level": 1,
+            "answers":[
+                {
+                    "rep":"must",
+                    "correct": true
+                },
+                {
+                    "rep": "will",
+                    "correct": false
+                },
+                {
+                    "rep": "should",
+                    "correct": false
+                }
+            ]
+        },
+
+        {
+            "id": 2,
+            "question": "Complétez la phrase avec la particule qui convient :
+            Could you give me a hand sorting ___ these documents?
+            I’m a bit overwhelmed.",
+            "level": 1,
+            "answers":[
+                {
+                    "rep": "over",
+                    "correct": false
+                },
+                {
+                    "rep": "in",
+                    "correct": false
+                },
+                {
+                    "rep": "out",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "Complétez la phrase avec la particule qui convient :
+            Could you give me a hand sorting ___ these documents?
+            I’m a bit overwhelmed.",
+            "level": 1,
+            "answers":[
+                {
+                    "rep": "over",
+                    "correct": false
+                },
+                {
+                    "rep": "in",
+                    "correct": false
+                },
+                {
+                    "rep": "out",
+                    "correct": true
+                }
+            ]
+        }
+
+    ]
+
+}

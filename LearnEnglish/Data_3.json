@@ -1,0 +1,47 @@
+{
+    "quiz":[
+        {
+            "id": 1,
+            "question": "Remettez les mots dans l’ordre pour traduire les phrases suivantes :
+            the / we / have / house. / should / we / time, / clean / since",
+            "level": 3,
+            "answers":[
+                {
+                    "rep":"since we have time, we should clean the house.",
+                    "correct": true
+                },
+                {
+                    "rep": "SINCE we should, we have time clean the house.",
+                    "correct": false
+                },
+                {
+                    "rep": "SINCE we should, we have time the house clean.",
+                    "correct": false
+                }
+            ]
+        },
+
+        {
+            "id": 2,
+            "question": "Remettez les mots dans l’ordre pour traduire les phrases suivantes :
+            don’t / myself / you / want / go / by / to / come. / since / I’ll",
+            "level": 3,
+            "answers":[
+                {
+                    "rep": "I’ll want to come go by myself SINCE you don’t.",
+                    "correct": false
+                },
+                {
+                    "rep": "I’ll go by myself SINCE you don’t want to come.",
+                    "correct": true
+                },
+                {
+                    "rep": "I’ll want to come go by myself don’t you SINCE .",
+                    "correct": false
+                }
+            ]
+        }
+
+    ]
+
+}

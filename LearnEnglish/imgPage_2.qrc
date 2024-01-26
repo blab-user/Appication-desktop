@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/page_2">
+        <file>imgPage_2_1.png</file>
+        <file>imgPage_2_2.png</file>
+        <file>learnEnglishPage_1.png</file>
+        <file>back-ground.png</file>
+        <file>back-ground_2.png</file>
+    </qresource>
+</RCC>

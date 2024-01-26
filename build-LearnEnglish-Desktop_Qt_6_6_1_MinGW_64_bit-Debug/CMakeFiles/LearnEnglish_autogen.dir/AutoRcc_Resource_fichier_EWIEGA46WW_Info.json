@@ -1,0 +1,19 @@
+{
+	"BUILD_DIR" : "C:/Users/Rosaire-Vezolo/Desktop/projet-c++/Game_learn/Game_learn/build-LearnEnglish-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/LearnEnglish_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/Rosaire-Vezolo/Desktop/projet-c++/Game_learn/Game_learn/build-LearnEnglish-Desktop_Qt_6_6_1_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/Rosaire-Vezolo/Desktop/projet-c++/Game_learn/Game_learn/build-LearnEnglish-Desktop_Qt_6_6_1_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/Rosaire-Vezolo/Desktop/projet-c++/Game_learn/Game_learn/LearnEnglish",
+	"CMAKE_SOURCE_DIR" : "C:/Users/Rosaire-Vezolo/Desktop/projet-c++/Game_learn/Game_learn/LearnEnglish",
+	"INCLUDE_DIR" : "C:/Users/Rosaire-Vezolo/Desktop/projet-c++/Game_learn/Game_learn/build-LearnEnglish-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/LearnEnglish_autogen/include",
+	"INPUTS" : [],
+	"LOCK_FILE" : "C:/Users/Rosaire-Vezolo/Desktop/projet-c++/Game_learn/Game_learn/build-LearnEnglish-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/LearnEnglish_autogen.dir/AutoRcc_Resource_fichier_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "Resource_fichier" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_Resource_fichier.cpp",
+	"RCC_EXECUTABLE" : "C:/Qt/6.6.1/mingw_64/./bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "C:/Users/Rosaire-Vezolo/Desktop/projet-c++/Game_learn/Game_learn/build-LearnEnglish-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/LearnEnglish_autogen.dir/AutoRcc_Resource_fichier_EWIEGA46WW_Used.txt",
+	"SOURCE" : "C:/Users/Rosaire-Vezolo/Desktop/projet-c++/Game_learn/Game_learn/LearnEnglish/Resource_fichier.qrc",
+	"VERBOSITY" : 0
+}
